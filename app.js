@@ -43,6 +43,7 @@ app.get('/', routes.index);
 
 app.get('/u/:user', routes.user);
 
+app.post('/post', routes.checkLogin);
 app.post('/post', routes.post);
 
 app.get('/reg', routes.checkNotLogin);
